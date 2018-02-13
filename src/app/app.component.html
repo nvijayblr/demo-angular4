@@ -1,0 +1,9 @@
+
+<h3>{{title}}, {{task.personalDetails.name}}, {{task.personalDetails.age}}</h3>
+
+<h3>Values form contact details {{task.contactDetails.phone}}, {{task.contactDetails.email}}</h3>
+<!-- Sharing data between components using shareDataEvent -->
+<app-personal-details [personalDetails]="task.personalDetails" (shareDataEvent) = "contact.sendData($event)">Loading</app-personal-details>
+
+<app-contact-details [contactDetails]="task.contactDetails" #contact>Loading</app-contact-details>
+

@@ -1,0 +1,26 @@
+<div class="panel-group">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Contact Details</div>
+    <div class="panel-body">
+        <div>Name and age value from Personal Details Comp: {{_personalDetails.name}}, {{_personalDetails.age}}</div>
+        <div>Phone & Email: {{contactDetails.phone}}, {{contactDetails.email}}</div>
+    	<form>
+	    	<div class="row">
+	    		<div class="col-md-4">
+		            <div class="form-group">
+		            	<label for="phone">Name:</label>
+		            	<input type="text" class="form-control" id="phone" placeholder="Phone number" 
+		            	[(ngModel)]="contactDetails.phone" name="phone">
+		            </div>    
+	    		</div>
+	    		<div class="col-md-4">
+		            <div class="form-group">
+		            	<label for="email">Age:</label>
+		            	<input type="text" class="form-control" id="email" placeholder="Email"
+		            	[(ngModel)]="contactDetails.email" name="eamil">
+		            </div>    
+	    		</div>
+	    	</div>
+	    </form>
+    </div>
+</div>
